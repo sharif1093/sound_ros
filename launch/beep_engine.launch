@@ -1,0 +1,7 @@
+<launch>
+    <arg name="beep_dir" default="$(find hands_sound)/beep" />
+    <node pkg="sound_play"  type="soundplay_node.py" name="hello_world_node" output="screen" respawn="true" />
+    <node pkg="hands_sound" type="beep_engine.py" name="beep_engine" output="screen" respawn="true">
+        <param name="beep_dir" value="$(arg beep_dir)" />
+    </node>
+</launch>

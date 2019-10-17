@@ -1,0 +1,6 @@
+<launch>
+
+<include file="$(find hands_sound)/launch/speech_engine.launch" />
+<node pkg="hands_sound" type="chatter.py" name="say_hello_node" output="screen" respawn="true"/>
+
+</launch>

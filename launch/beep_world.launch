@@ -1,0 +1,6 @@
+<launch>
+
+<include file="$(find hands_sound)/launch/beep_engine.launch" />
+<node pkg="hands_sound" type="beeper.py" name="beeper_node" output="screen" respawn="true"/>
+
+</launch>

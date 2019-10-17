@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="sound_play"  type="soundplay_node.py" name="hello_world_node" output="screen" respawn="true" />
+    <node pkg="hands_sound" type="speech_engine.py" name="speech_engine_node" output="screen" respawn="true"/>
+</launch>
