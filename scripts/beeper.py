@@ -2,7 +2,7 @@
 
 import rospy
 # from std_msgs.msg import String
-from hands_msgs.msg import Beep
+from sound_ros.msg import Beep
 
 def beeper():
     pub = rospy.Publisher('/beep_engine/beep', Beep, queue_size=10)

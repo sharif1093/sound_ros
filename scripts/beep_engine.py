@@ -5,7 +5,7 @@ import rospy
 from sound_play.msg import SoundRequest
 from sound_play.libsoundplay import SoundClient
 
-from hands_msgs.msg import Beep
+from sound_ros.msg import Beep
 
 class BeepEngine():
     def __init__(self):
